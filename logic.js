@@ -1,4 +1,5 @@
-let apiMainUrl = "https://x8ki-letl-twmt.n7.xano.io/api:Yxq2vVpQ";
+//let apiMainUrl = "https://x8ki-letl-twmt.n7.xano.io/api:Yxq2vVpQ";
+//ukoliko neko zeli da testira funkcionalnost login-a i register-a neka izbrise komentar ove gore linije let apiMainUrl...
 
 if(document.getElementById('registerBtn')){
     document.getElementById('registerBtn').onclick = function(e){
