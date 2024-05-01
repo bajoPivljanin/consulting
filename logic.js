@@ -1,5 +1,18 @@
-//let apiMainUrl = "https://x8ki-letl-twmt.n7.xano.io/api:Yxq2vVpQ";
+let apiMainUrl = "https://x8ki-letl-twmt.n7.xano.io/api:Yxq2vVpQ";
 //ukoliko neko zeli da testira funkcionalnost login-a i register-a neka izbrise komentar ove gore linije let apiMainUrl...
+
+if(document.getElementById('custom-select')){
+let apiEndpoint = apiMainUrl+"/business_area";
+fetch(apiEndpoint)
+.then(response=>response.json())
+.then(areas=>{
+    areas.sort((a,b)=>a.name.localeCompare(b.name));
+    areas.forEach(area=>{
+        let select = document.getElementById('custom-select');
+        select.innerHTML += `<option value="${area.id}">${area.name}</option>`
+    })
+})
+}
 
 if(document.getElementById('registerBtn')){
     document.getElementById('registerBtn').onclick = function(e){
