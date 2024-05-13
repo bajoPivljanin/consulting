@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-span{
-  font-size: 1.3rem;
-}
-
-body {
-  font-family: "Mulish", sans-serif;
-}
 
 header {
   background-color: white;
@@ -72,131 +65,63 @@ header .donji-nav ul li i {
   font-size: 1.2rem;
 }
 
-.mesto {
-  background-color: transparent;
-  color: black;
-  margin: 5rem 0rem;
-}
-.mesto h1 {
-  font-weight: 900;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.mesto h1 span {
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-.mesto form {
-  margin: auto;
-  display: table;
-}
-.mesto select {
-  position: relative;
-  width: 600px;
-  padding: 18px;
-  border: 4px solid #9c7a00;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -moz-appearance: none;
-       appearance: none;
-  outline: none;
-  -webkit-appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="black"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 8px center;
-  background-size: 35px;
-}
-.mesto select option {
-  background-color: white;
-  font-weight: bold;
-}
-.mesto button {
-  font-size: 1rem;
-  padding: 18px;
-  width: 200px;
-  border: 4px solid #9c7a00;
-  border-left: none;
-  background-color: #9c7a00;
-  color: white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: 0.2s;
-}
-.mesto button:hover {
-  background-color: white;
-  color: #9c7a00;
-}
-
-.oglasi {
-  align-items: center;
-  background-color: white;
-  margin: 0rem 15rem;
-  margin-bottom: 5rem;
-  padding: 5rem 0rem;
-  border-radius: 10px;
-  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.43);
-}
-.oglasi .oglas1 {
-  padding: 2rem;
-  margin: 0rem 8rem;
-  margin-bottom: 5rem;
+.strucnjak {
+  padding: 5rem 2rem;
+  margin: 3rem 8rem;
   border-radius: 5px;
-  transition: 0.2s;
-  cursor: pointer;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.43);
+}
+.strucnjak .levostr {
+  display: flex;
+}
+.strucnjak .levostr a {
   text-decoration: none;
-}
-.oglasi .oglas1:hover {
-  background-color: #ececec;
-  text-decoration: none;
-  color: #3d3d3d;
-}
-.oglasi .oglas1 a:hover {
-  color: #3d3d3d;
-}
-.oglasi .oglas1 ul {
-  margin-bottom: 3rem;
-}
-.oglasi .oglas1 span {
-  font-size: 1.5rem;
-  margin-left: 5px;
-}
-.oglasi .oglas1 span i {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+  transition: 0.3s;
   color: #9c7a00;
 }
-.oglasi .oglas1 img {
-  width: 15rem;
-  height: 15rem;
+.strucnjak .levostr a:hover {
+  color: #7e7b73;
+}
+.strucnjak .levostr img {
+  width: 8rem;
+  height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
   float: right;
+  border: 3px solid #9c7a00;
 }
-.oglasi .oglas1 h1 {
+.strucnjak .levostr .tekst {
+  margin-left: 2rem;
+  margin-top: 5px;
+}
+.strucnjak .levostr .tekst h1 {
   font-weight: 900;
   font-size: 1.8rem;
   color: black;
 }
-.oglasi .oglas1 h1 i {
-  color: #9c7a00;
-}
-.oglasi .oglas1 h2 {
+.strucnjak .levostr .tekst h2 {
   font-weight: 400;
   font-size: 1.3rem;
   color: #3d3d3d;
+  margin-top: -5px;
 }
-.oglasi .oglas1 h2 I {
-  font-size: 20px;
-}
-span{
-  text-transform: lowercase;
+.strucnjak .levostr .tekst h3 {
   font-size: 1.3rem;
-}
-a{
-  text-decoration: none;
   color: #3d3d3d;
+  margin-top: 1rem;
 }
+.strucnjak .levostr .tekst h3 span {
+  font-weight: bold;
+}
+.strucnjak .levostr .tekst p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -275,4 +200,4 @@ footer #copyright {
   color: #7e7b73;
   left: 50%;
   transform: translate(-50%, -50%);
-}/*# sourceMappingURL=pretraga.css.map */
+}/*# sourceMappingURL=cal.css.map */

@@ -145,6 +145,8 @@ header .donji-nav ul li i {
   font-size: 1.2rem;
 }
 .ponude-section .col-md-6 .ponuda1 {
+  background-image: url(../img/programiranje.jpg);
+  background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
   height: 20rem;
   width: 100%;
@@ -160,6 +162,9 @@ header .donji-nav ul li i {
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
 }
 .ponude-section .col-md-6 .ponuda2 {
+  background-image: url(../img/preduzetnistvo.jpg);
+  background-size: cover;
+  background-position: 0rem -4rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
   height: 20rem;
   width: 100%;
@@ -192,23 +197,6 @@ header .donji-nav ul li i {
   color: #f13a11;
   font-size: 7px;
 }
-.ponude-section .col-md-4 {
-  background-image: url(/img/kvad.jpeg);
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
-  background-position: -5rem -10rem;
-  height: 20rem;
-  width: 31%;
-  margin: 15px;
-  border-radius: 10px;
-  color: white;
-  padding: 25px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.ponude-section .col-md-4:hover {
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
-}
 .ponude-section .col-md-4 img {
   position: absolute;
   width: 25px;
@@ -219,11 +207,63 @@ header .donji-nav ul li i {
   color: #d4d4d4;
   margin-top: -6px;
 }
+.ponude-section .col-md-4 .ponuda3 {
+  background-image: url(../img/prodaja.jpg);
+  background-size: cover;
+  background-position: -5rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+  height: 20rem;
+  width: 100%;
+  margin: 15px 0px;
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.ponude-section .col-md-4 .ponuda3:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
+}
+.ponude-section .col-md-4 .ponuda4 {
+  background-image: url(../img/ecommerce.jpg);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+  height: 20rem;
+  width: 100%;
+  margin: 15px 0px;
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.ponude-section .col-md-4 .ponuda4:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
+}
+.ponude-section .col-md-4 .ponuda5 {
+  background-image: url(../img/marketing.webp);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+  height: 20rem;
+  width: 100%;
+  margin: 15px 0px;
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.ponude-section .col-md-4 .ponuda5:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
+}
 
 .strucnjaci {
   font-family: "Mulish", sans-serif;
   text-align: center;
-  padding-bottom: 12rem;
+  padding-bottom: 8rem;
 }
 .strucnjaci img {
   width: 12rem;
@@ -250,6 +290,25 @@ header .donji-nav ul li i {
 .strucnjaci span {
   font-weight: 700;
   color: #9c7a00;
+}
+.strucnjaci a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #9c7a00;
+  border: 2px solid #9c7a00;
+  padding: 10px 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.strucnjaci a i {
+  margin-right: 10px;
+}
+.strucnjaci a:hover {
+  background-color: #9c7a00;
+  color: white;
+}
+.strucnjaci .col-md-3 {
+  margin-bottom: 8rem;
 }
 
 .mark-section {

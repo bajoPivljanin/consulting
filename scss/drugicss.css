@@ -1,84 +1,78 @@
 body {
-	background-color: #e9e9e9;
+  background-color: white;
 }
 
 form {
-	max-width: 500px;
-	margin: auto;
-	padding: 40px;
-	margin-top: 50px;
-	border: 1px solid #f1a41a;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 50px;
+  border: 1px solid #f1a41a;
 }
-
 form.pretraga {
-	max-width: 100%;
+  max-width: 100%;
 }
-
 form.pretraga button {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .oglasi {
-	background-color: white;
-	margin-top: 50px;
-	padding: 20px;
+  background-color: white;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 .car-item-wrapper {
-	background-color: #f4f4f4;
-	padding: 10px;
-	margin-bottom: 30px;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
 }
-
 .car-item-wrapper img {
-	width: 100%;
-	height: 175px;
-	object-fit: cover;
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .car-item-wrapper p {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .single-car-wrapper {
-	margin-top: 50px;
+  margin-top: 50px;
 }
-
 .single-car-wrapper img {
-	width: 100%;
+  width: 100%;
 }
 
 .btn.btn-primary {
-	background-color: #f1a41a;
-	border-color: #f1a41a;
-	color: #464646;
+  background-color: #f1a41a;
+  border-color: #f1a41a;
+  color: #464646;
 }
-
 .btn.btn-primary:hover {
-	background-color: #f1b905;
-	border-color: #f1b905;
+  background-color: #f1b905;
+  border-color: #f1b905;
 }
 
 .loader-overlay {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #f1a41a;
-	opacity: 0.9;
-	justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f1a41a;
+  opacity: 0.9;
+  justify-content: center;
   align-items: center;
   display: none;
   z-index: 9999;
 }
+
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -95,6 +89,7 @@ form.pretraga button {
 .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
 }
+
 @keyframes lds-ripple {
   0% {
     top: 36px;
@@ -125,3 +120,111 @@ form.pretraga button {
     opacity: 0;
   }
 }
+#navigation a {
+  background-color: #f1b905;
+  color: black;
+  border: 1px solid #f1b905;
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  margin: 0rem 0.3rem;
+  transition: 0.3s;
+}
+#navigation a:hover {
+  background-color: white;
+  color: #f1b905;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.nav {
+  border-bottom: 2px solid rgb(200, 200, 200);
+  margin: 0rem 1rem;
+  margin-bottom: 9rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 8rem;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  margin-top: 10rem;
+}
+footer .left-footer {
+  display: table;
+  margin: 0 auto;
+}
+footer .left-footer #naslovfooter {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+footer .left-footer a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin: 0px 5px;
+  transition: 0.3s;
+  color: #f1b905;
+}
+footer .left-footer a:hover {
+  color: #7e7b73;
+}
+footer .middle-footer {
+  display: table;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+footer .middle-footer P {
+  color: #f1b905;
+  font-weight: 700;
+}
+footer .middle-footer ul {
+  padding-left: 0px;
+}
+footer .middle-footer ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+footer .middle-footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+footer .middle-footer ul li a:hover {
+  color: #7e7b73;
+}
+footer .right-footer {
+  display: table;
+  margin: 0 auto;
+}
+footer .right-footer P {
+  text-transform: uppercase;
+  color: #f1b905;
+  font-weight: 700;
+}
+footer .right-footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+footer .right-footer a:hover {
+  color: #7e7b73;
+}
+footer .right-footer i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+footer #copyright {
+  position: absolute;
+  bottom: -15px;
+  color: #7e7b73;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=drugicss.css.map */

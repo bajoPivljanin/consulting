@@ -1,12 +1,10 @@
 $default:#9c7a00;
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    font-family: 'Mulish', sans-serif;
 }
 header{
     background-color: white;
@@ -74,134 +72,107 @@ header{
     }
 }
 
-.mesto{
-    background-color: transparent;
-    color: black;
-    margin: 5rem 0rem;
-    h1{
-        font-weight: 900;
-        font-size: 1.8rem;
-        text-align: center;
-        margin-bottom: 2rem;
-        span{
-            font-weight: 400;
-            font-size: 1.5rem;
-        }
-    }
-    form{
-        margin: auto;
-        display: table;
-    }
-    select {
-        position: relative;
-        width: 600px;
-        padding: 18px;
-        border: 4px solid $default;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        appearance: none;
-        outline: none;
-        -webkit-appearance: none;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="black"/></svg>');
-        background-repeat: no-repeat;
-        background-position: right 8px center;
-        background-size: 35px;
-        option {
-            background-color: white;
-            font-weight: bold;
-          }
-      }
+// .strucnjak{
+//     padding: 2rem;
+//     margin: 6rem 8rem;
+//     border-radius: 5px;
+//     ul{
+//         margin-bottom: 3rem;
+//     }
+//     span{
+//         font-size: 1.5rem;
+//         margin-left: 5px;
+//         i{
+//             color: $default;
+//         }
+//     }
+//     cursor: pointer;
+//     img{
+//         width: 15rem;
+//         height:15rem;
+//         object-fit: cover;
+//         border-radius: 100%;
+//         float: right;
+//     }
+//     h1{
+//         font-weight: 900;
+//         font-size: 1.8rem;
+//         color: black;
+//         i{
+//             color: $default;
+//         }
+//     }
+//     h2{
+//         font-weight: 400;
+//         font-size: 1.3rem;
+//         color: #3d3d3d;
+//         I{
+//             font-size: 20px;
+//         }
+//     }
+//     -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
+//     -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
+//     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
+// }
 
-    button{
-        font-size: 1rem;
-        padding: 18px;
-        width: 200px;
-        border: 4px solid $default;
-        border-left: none;
-        //background-color: #a89132;
-        background-color: $default;
-        color: white;
-        border-top-right-radius:10px;
-        border-bottom-right-radius:10px;
-        transition: .2s;
-        &:hover{
-            background-color: white;
-            color: $default;
-        }
-    }
-}
-
-.oglasi{
-    // display: flex;
-    // justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin: 0rem 15rem;
-    margin-bottom: 5rem;
-    padding: 5rem 0rem;
-    border-radius: 10px;
+.strucnjak{
+    padding: 5rem 2rem;
+    margin: 3rem 8rem;
+    border-radius: 5px;
     -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
     -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
-        .oglas1{
-            padding: 2rem;
-            margin: 0rem 8rem;
-            margin-bottom: 5rem;
-            border-radius: 5px;
-            transition: .2s;
+
+    .levostr{
+        display: flex;
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+            margin-right: .7rem;
+            transition: .3s;
+            color: $default;
             &:hover{
-                background-color: #ececec;
-                text-decoration: none;
+                color: #7e7b73;
             }
-            ul{
-                margin-bottom: 3rem;
-            }
-            span{
-                font-size: 1.5rem;
-                margin-left: 5px;
-                i{
-                    color: $default;
-                }
-            }
-            cursor: pointer;
-            img{
-                width: 15rem;
-                height:15rem;
-                object-fit: cover;
-                border-radius: 100%;
-                float: right;
-            }
+        }
+        img{
+            width: 8rem;
+            height:8rem;
+            object-fit: cover;
+            border-radius: 100%;
+            float: right;
+            border: 3px solid $default;
+        }
+        .tekst{
+            margin-left: 2rem;
+            margin-top: 5px;
             h1{
                 font-weight: 900;
                 font-size: 1.8rem;
                 color: black;
-                i{
-                    color: $default;
-                }
             }
             h2{
                 font-weight: 400;
                 font-size: 1.3rem;
                 color: #3d3d3d;
-                I{
-                    font-size: 20px;
-                }
+                margin-top: -5px;
+            }
+            h3{
+                font-size: 1.3rem;
+                color: #3d3d3d;
+                margin-top: 1rem;
                 span{
-                    font-weight: 400;
-                    font-size: 1.3rem;
-                    color: #3d3d3d;
-                    I{
-                        font-size: 20px;
-                    }
+                    font-weight: bold;
                 }
             }
-            
-            -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
-            -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
-            box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.43);
+            p{
+                margin-top: 2rem;
+                font-size: 1.2rem;
+                margin-bottom: 3rem;
+            }
         }
+    }
 }
-
 
 footer{
     background-color: black;

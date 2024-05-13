@@ -1,61 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700,400,500,600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9310e1148a.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
-    <link rel="stylesheet" href="scss/style.css">
-    <title>consulting.com</title>
-    <link rel="icon" href="./img/logo.png">
-</head>
-<body>
-    
-    <header>
-        <div class="container">
-            <div class="gornji-nav">
-                <div class="row">
-                    <div class="col-md-6">
-                       <a href="index.html">consulting.com</a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="right-gornji">
-                            <ul>
-                                <li><a href="#"> <i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
-                            </ul>  
-                            <i class="fa-solid fa-bars" id="menuopen"></i>
-                            <i class="fa-solid fa-xmark" id="menuclose"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="donji-nav">
-                <div class="row">
-                    <ul>
-                        <!-- <i class="fa-solid fa-house"></i> -->
-                        <li><a href="index.html">pocetna</a></li>
-                        <li><a href="pretraga.html">pretraga</a></li>
-                        <li><a href="#">faq</a></li>
-                        <li><a href="login.html"><b>login</b></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php 
+    require_once 'inc/header.php';
+    require_once 'app/classes/Business.php';
+    require_once 'app/classes/Expert.php';
+
+    $businesses = new Business();
+    $businesses = $businesses->fetch_all();
+    header("Cache-Control: no cache");
+?>
 
     <div class="hero-section">
         <h1>Nauči od najboljeg, budi najbolji!</h1>
         <p>Sajt za savetovanje sa stručnjacima najboljim u svojoj oblasti zanimanja</p>
         <div class="mesto">
-            <form action="">
-                <select name="" id="custom-select" class="custom-select">
-                    <option value="">Navedite oblast zanimanja</option>
+            <form method="post" action="pretraga.php">
+                <select name="search" id="custom-select" class="custom-select">
+                    <option value="" disabled selected>Izaberite oblast zanimanja</option>
+                    <?php foreach($businesses as $business):?>
+                        <option value="<?=$business['business_id']?>"><?=$business['name']?></option>
+                    <?php endforeach;?>
                 </select> 
+                <button type="submit">Pretraži</button>
             </form> 
-            <button>Pretrazi</button>
             <!-- <input type="submit" value="submit" id="submitday"> -->
         </div>
     </div>
@@ -180,43 +145,4 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="left-footer">
-                    <a href="#" id="naslovfooter">consulting.com</a>
-                    <br>
-                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="middle-footer">
-                        <p>brzi linkovi</p>
-                        <ul>
-                            <li><a href="index.html">pocetna</a></li>
-                            <li><a href="#">pretraga</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">login</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="right-footer">
-                        <p>kontakt</p>
-                        <a href="mailto:milosantunovic1@gmail.com" id="email"><i class="fa-regular fa-envelope"></i>info@consulting.com</a>
-                        <br>
-                        <a href="tel:069659373" id="fon"><i class="fa-solid fa-phone"></i>069 659 373</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p id="copyright">© consulting.com | All rights reserved</p>
-    </footer>
-
-    <script src="logic.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+    <?php require_once 'inc/footer.php';?>

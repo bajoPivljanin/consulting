@@ -154,6 +154,8 @@ header{
     }
     .col-md-6{
         .ponuda1{
+            background-image: url(../img/programiranje.jpg);
+            background-size: cover;
             box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
             height: 20rem;
             width: 100%;
@@ -169,6 +171,9 @@ header{
             }
         }
         .ponuda2{
+            background-image: url(../img/preduzetnistvo.jpg);
+            background-size: cover;
+            background-position: 0rem -4rem;
             box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
             height: 20rem;
             width: 100%;
@@ -203,21 +208,6 @@ header{
         }
     }
     .col-md-4{
-        background-image: url(/img/kvad.jpeg);
-        box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
-        background-position: -5rem -10rem;
-        height: 20rem;
-        width: 31%;
-        margin: 15px;
-        border-radius: 10px;
-        color: white;
-        padding: 25px;
-        position: relative;
-        cursor: pointer;
-        transition: .4s;
-        &:hover{
-            box-shadow: rgba(0,0,0,0.5) 0 0 0 10000px inset;
-        }
         img{
             position: absolute;
             width: 25px;
@@ -228,13 +218,65 @@ header{
             color: #d4d4d4;
             margin-top: -6px;
         }
+        .ponuda3{
+            background-image: url(../img/prodaja.jpg);
+            background-size: cover;
+            background-position: -5rem 0rem;
+            box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
+            height: 20rem;
+            width: 100%;
+            margin: 15px 0px;
+            border-radius: 10px;
+            color: white;
+            padding: 25px;
+            position: relative;
+            cursor: pointer;
+            transition: .4s;
+            &:hover{
+                box-shadow: rgba(0,0,0,0.5) 0 0 0 10000px inset;
+            }
+        }
+        .ponuda4{
+            background-image: url(../img/ecommerce.jpg);
+            background-size: cover;
+            box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
+            height: 20rem;
+            width: 100%;
+            margin: 15px 0px;
+            border-radius: 10px;
+            color: white;
+            padding: 25px;
+            position: relative;
+            cursor: pointer;
+            transition: .4s;
+            &:hover{
+                box-shadow: rgba(0,0,0,0.5) 0 0 0 10000px inset;
+            }
+        }
+        .ponuda5{
+            background-image: url(../img/marketing.webp);
+            background-size: cover;
+            box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
+            height: 20rem;
+            width: 100%;
+            margin: 15px 0px;
+            border-radius: 10px;
+            color: white;
+            padding: 25px;
+            position: relative;
+            cursor: pointer;
+            transition: .4s;
+            &:hover{
+                box-shadow: rgba(0,0,0,0.5) 0 0 0 10000px inset;
+            }
+        }
     }
 }
 
 .strucnjaci{
     font-family: 'Mulish', sans-serif;
     text-align: center;
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
     img{
         width: 12rem;
         height: 12rem;
@@ -260,6 +302,25 @@ header{
     span{
         font-weight: 700;
         color: $default;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $default;
+        border: 2px solid $default;
+        padding: 10px 30px;
+        border-radius: 15px;
+        transition: .3s;
+        i{
+            margin-right: 10px;
+        }
+        &:hover{
+            background-color: $default;
+            color: white;
+        }
+    }
+    .col-md-3{
+        margin-bottom: 8rem;
     }
 }
 
