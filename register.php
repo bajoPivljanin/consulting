@@ -4,7 +4,7 @@
     require_once "app/classes/User.php";
     $user = new User();
     if($user->is_logged()){
-        header('location:reservation.php');
+        header('location:index.php');
     }
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $first_name = $_POST['first_name'];
